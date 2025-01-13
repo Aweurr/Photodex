@@ -5,21 +5,13 @@ const ColorPicker = ({ currentColor, onChange }) => {
   const colors = ["red", "orange", "yellow", "green", "blue"];
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleColorSelect = (color) => {
-    onChange(color);
-    setIsOpen(false); // Fermer la liste après le choix
-  };
-
   return (
     <div className="color-picker">
-      {/* Rectangle de la couleur actuelle */}
       <div
         className="color-display"
         style={{ backgroundColor: currentColor }}
-        onClick={() => setIsOpen(!isOpen)} // Ouvrir/fermer la liste
+        onClick={() => setIsOpen(!isOpen)}
       ></div>
-
-      {/* Liste des couleurs */}
       {isOpen && (
         <div className="color-options">
           {colors.map((color) => (
@@ -27,7 +19,10 @@ const ColorPicker = ({ currentColor, onChange }) => {
               key={color}
               className="color-option"
               style={{ backgroundColor: color }}
-              onClick={() => handleColorSelect(color)} // Choisir une couleur
+              onClick={() => {
+                onChange(color);
+                setIsOpen(false);
+              }}
             ></div>
           ))}
         </div>

@@ -1,0 +1,27 @@
+.pokemon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .pokemon-table th, .pokemon-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .path {
+    margin: 2px;
+    background-color: #f0f0f0;
+    padding: 4px 6px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  .pokemon-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  

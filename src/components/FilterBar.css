@@ -1,0 +1,9 @@
+.filter-bar {
+    margin-bottom: 20px;
+  }
+  
+  .filter-bar select {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
