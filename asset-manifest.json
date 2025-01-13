@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Photodex/static/css/main.127a8b23.css",
-    "main.js": "/Photodex/static/js/main.577517fb.js",
+    "main.css": "/Photodex/static/css/main.dfad3899.css",
+    "main.js": "/Photodex/static/js/main.0130caa7.js",
     "static/js/488.9a2a4761.chunk.js": "/Photodex/static/js/488.9a2a4761.chunk.js",
     "index.html": "/Photodex/index.html",
-    "main.127a8b23.css.map": "/Photodex/static/css/main.127a8b23.css.map",
-    "main.577517fb.js.map": "/Photodex/static/js/main.577517fb.js.map",
+    "main.dfad3899.css.map": "/Photodex/static/css/main.dfad3899.css.map",
+    "main.0130caa7.js.map": "/Photodex/static/js/main.0130caa7.js.map",
     "488.9a2a4761.chunk.js.map": "/Photodex/static/js/488.9a2a4761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.127a8b23.css",
-    "static/js/main.577517fb.js"
+    "static/css/main.dfad3899.css",
+    "static/js/main.0130caa7.js"
   ]
 }
