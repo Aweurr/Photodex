@@ -1,9 +1,9 @@
 .filter-bar {
-    margin-bottom: 20px;
-  }
-  
-  .filter-bar select {
-    padding: 8px;
-    font-size: 16px;
-  }
-  
+  margin: 20px 0;
+}
+
+.filter-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

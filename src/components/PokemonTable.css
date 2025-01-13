@@ -1,27 +1,21 @@
 .pokemon-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .pokemon-table th, .pokemon-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  .path {
-    margin: 2px;
-    background-color: #f0f0f0;
-    padding: 4px 6px;
-    border-radius: 5px;
-    display: inline-block;
-  }
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  text-align: left;
+}
 
-  .pokemon-image {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
+.pokemon-table th,
+.pokemon-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.path {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+}

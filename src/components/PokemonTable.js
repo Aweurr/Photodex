@@ -2,6 +2,26 @@ import React from "react";
 import ColorPicker from "./ColorPicker";
 import "./PokemonTable.css";
 
+// Logos pour jour et nuit
+const DayIcon = () => <span>☀️</span>;
+const NightIcon = () => <span>🌙</span>;
+
+// Couleurs pour les régions
+const regionColors = {
+  "Désert Sabrûlant": "#f4a261",
+  "Terres Désolées": "#e76f51",
+  "Parc Naturel d'Anthos": "#2a9d8f",
+  "Chemin Caché": "#8ecae6",
+  "Fleuve Rabord": "#219ebc",
+  "Plage Pastel": "#ffafcc",
+  "Jungle Grantarbre": "#4caf50",
+  "Forêt Sibylline": "#6a994e",
+  "Volcan Lavacoul": "#d1495b",
+  "Plaine Frisquette": "#bde0fe",
+  "Grotte Lointaine": "#9c6644",
+  "Ruines du Protecteur": "#9370db",
+};
+
 const PokemonTable = ({ pokemons, onScoreChange }) => {
   return (
     <table className="pokemon-table">
@@ -36,11 +56,30 @@ const PokemonTable = ({ pokemons, onScoreChange }) => {
               </td>
             ))}
             <td>
-              {pokemon.paths.map((path, index) => (
-                <div key={index} className="path">
-                  {path}
-                </div>
-              ))}
+              {pokemon.paths.map((path, index) => {
+                const isDay = path.includes("jour");
+                const isNight = path.includes("nuit");
+
+                return (
+                  <div
+                    key={index}
+                    className="path"
+                    style={{
+                      backgroundColor: Object.keys(regionColors).find((region) =>
+                        path.includes(region)
+                      )
+                        ? regionColors[
+                            Object.keys(regionColors).find((region) =>
+                              path.includes(region)
+                            )
+                          ]
+                        : "#ccc",
+                    }}
+                  >
+                    {path} {isDay && <DayIcon />} {isNight && <NightIcon />}
+                  </div>
+                );
+              })}
             </td>
           </tr>
         ))}

@@ -1,10 +1,148 @@
 export const pokemonList = [
     {
-      id: 1,
+      id: 30,
       name: "Pikachu",
-      image: "Prismillon.png",
-      paths: ["Base", "Chemin Caché (nuit)", "Parc Naturel d'Anthos (Source Lumina)"],
+      paths: ["Base", "Chemin Caché (nuit)", "Parc Naturel d'Anthos (Source Lumina)", "Plage Pastel (jour)", "Plage Pastel (nuit)", "Récif de Kopadia (jour)"],
       scores: { photo1: "red", photo2: "orange", photo3: "yellow", photo4: "green" },
     },
-    // Ajoute d'autres Pokémon ici...
+    {
+      id: 31,
+      name: "Bombydou",
+      paths: ["Base"],
+      scores: { photo1: "blue", photo2: "red", photo3: "orange", photo4: "yellow" },
+    },
+    {
+      id: 32,
+      name: "Sapereau",
+      paths: ["Base"],
+      scores: { photo1: "green", photo2: "blue", photo3: "red", photo4: "orange" },
+    },
+    {
+      id: 33,
+      name: "Mastouffe",
+      paths: ["Base"],
+      scores: { photo1: "yellow", photo2: "green", photo3: "blue", photo4: "red" },
+    },
+    {
+      id: 34,
+      name: "Étourmi",
+      paths: ["Base"],
+      scores: { photo1: "red", photo2: "orange", photo3: "yellow", photo4: "green" },
+    },
+    {
+      id: 35,
+      name: "Miaouss",
+      paths: ["Base"],
+      scores: { photo1: "blue", photo2: "yellow", photo3: "green", photo4: "red" },
+    },
+    {
+      id: 36,
+      name: "Nanméouïe",
+      paths: ["Base"],
+      scores: { photo1: "orange", photo2: "blue", photo3: "red", photo4: "green" },
+    },
+    {
+      id: 37,
+      name: "Rattata",
+      paths: ["Base"],
+      scores: { photo1: "yellow", photo2: "green", photo3: "blue", photo4: "red" },
+    },
+    {
+      id: 38,
+      name: "Miamiasme",
+      paths: ["Base"],
+      scores: { photo1: "green", photo2: "yellow", photo3: "orange", photo4: "blue" },
+    },
+    {
+      id: 39,
+      name: "Simularbre",
+      paths: ["Base"],
+      scores: { photo1: "red", photo2: "blue", photo3: "yellow", photo4: "green" },
+    },
+    {
+      id: 40,
+      name: "Dedenne",
+      paths: ["Base"],
+      scores: { photo1: "orange", photo2: "yellow", photo3: "red", photo4: "green" },
+    },
+    {
+      id: 41,
+      name: "Capumain",
+      paths: ["Fleuve Rabord (jour)", "Fleuve Rabord (nuit)", "Jungle Grantarbre (jour)"],
+      scores: { photo1: "blue", photo2: "orange", photo3: "yellow", photo4: "green" },
+    },
+    {
+      id: 42,
+      name: "Croquine",
+      paths: ["Jungle Grantarbre (jour)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "red", photo2: "yellow", photo3: "green", photo4: "blue" },
+    },
+    {
+      id: 43,
+      name: "Chrysacier",
+      paths: ["Fleuve Rabord (jour)", "Jungle Grantarbre (jour)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "green", photo2: "blue", photo3: "red", photo4: "orange" },
+    },
+    {
+      id: 44,
+      name: "Charmillon",
+      paths: ["Fleuve Rabord (jour)", "Fleuve Rabord (nuit)", "Jungle Grantarbre (jour)"],
+      scores: { photo1: "yellow", photo2: "green", photo3: "orange", photo4: "red" },
+    },
+    {
+      id: 45,
+      name: "Arbok",
+      paths: ["Fleuve Rabord (jour)", "Jungle Grantarbre (jour)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "blue", photo2: "red", photo3: "yellow", photo4: "green" },
+    },
+    {
+      id: 46,
+      name: "Yanmega",
+      paths: ["Jungle Grantarbre (jour)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "orange", photo2: "blue", photo3: "yellow", photo4: "red" },
+    },
+    {
+      id: 47,
+      name: "Picassaut",
+      paths: ["Jungle Grantarbre (jour)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "red", photo2: "green", photo3: "orange", photo4: "blue" },
+    },
+    {
+      id: 48,
+      name: "Bazoucan",
+      paths: ["Fleuve Rabord (jour)", "Fleuve Rabord (nuit)", "Jungle Grantarbre (jour)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "yellow", photo2: "blue", photo3: "red", photo4: "orange" },
+    },
+    {
+      id: 49,
+      name: "Migalos",
+      paths: ["Fleuve Rabord (nuit)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "green", photo2: "red", photo3: "orange", photo4: "yellow" },
+    },
+    {
+      id: 50,
+      name: "Spododo",
+      paths: ["Fleuve Rabord (nuit)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "blue", photo2: "yellow", photo3: "red", photo4: "green" },
+    },
+    {
+      id: 51,
+      name: "Monaflèmit",
+      paths: ["Jungle Grantarbre (jour)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "orange", photo2: "green", photo3: "blue", photo4: "red" },
+    },
+    {
+      id: 52,
+      name: "Forizarre",
+      paths: ["Fleuve Rabord (jour)", "Jungle Grantarbre (jour)"],
+      scores: { photo1: "red", photo2: "yellow", photo3: "orange", photo4: "green" },
+    },
+    {
+      id: 53,
+      name: "Léopardus",
+      paths: ["Jungle Grantarbre (jour)", "Jungle Grantarbre (nuit)"],
+      scores: { photo1: "yellow", photo2: "green", photo3: "blue", photo4: "red" },
+    },
+    // Continue le format jusqu'à l'ID 234
   ];
+  
