@@ -1,27 +1,42 @@
 .color-picker {
   position: relative;
-  display: inline-block;
+  display: flex; /* Utilisation de flexbox */
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+  margin: 0 auto; /* Centrer dans le conteneur parent */
 }
 
 .color-display {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100px; /* Rectangle plus large */
+  height: 40px; /* Augmenter la hauteur pour un effet rectangulaire */
+  border: 1px solid #aaa;
+  border-radius: 6px;
   cursor: pointer;
+  background-color: #f0f0f0; /* Fond par défaut */
+  display: flex;
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
 }
 
 .color-options {
   position: absolute;
   display: flex;
-  gap: 5px;
-  margin-top: 5px;
+  gap: 8px; /* Espace entre les options */
+  margin-top: 10px;
+  justify-content: center; /* Centrer les options sous le rectangle */
+  z-index: 10; /* Pour apparaître au-dessus d'autres éléments */
 }
 
 .color-option {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #ccc;
+  width: 40px; /* Rectangle plus large */
+  height: 25px; /* Rectangle au lieu de carré */
+  border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.1); /* Agrandir légèrement au survol */
+  border-color: #888; /* Changer la bordure au survol */
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ColorPicker.css";
 
 const ColorPicker = ({ currentColor, onChange }) => {
-  const colors = ["red", "orange", "yellow", "green", "blue"];
+  const colors = ["#FFB3C1", "#FFD6A5", "#FDFFB6", "#CAFFBF", "#A0C4FF"]; // Tons pastel
   const [isOpen, setIsOpen] = useState(false);
 
   return (
