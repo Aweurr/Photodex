@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ColorPicker from "./ColorPicker";
 import "./PokemonTable.css";
 
@@ -22,7 +22,45 @@ const regionColors = {
   "Ruines du Protecteur": "#9370db",
 };
 
-const PokemonTable = ({ pokemons, onScoreChange }) => {
+const IconLink = ({ url }) => (
+  <a href={url} target="_blank" rel="noopener noreferrer" className="icon-link">
+    🔗
+  </a>
+);
+
+const IconComment = ({ comment, onCommentChange }) => {
+  const [editing, setEditing] = useState(false);
+  const [tempComment, setTempComment] = useState(comment);
+
+  const handleSave = () => {
+    setEditing(false);
+    onCommentChange(tempComment);
+  };
+
+  return (
+    <div className="icon-comment">
+      {editing ? (
+        <div>
+          <input
+            type="text"
+            value={tempComment}
+            onChange={(e) => setTempComment(e.target.value)}
+            className="comment-input"
+          />
+          <button onClick={handleSave} className="comment-save">
+            ✅
+          </button>
+        </div>
+      ) : (
+        <span onClick={() => setEditing(true)} className="comment-icon">
+          📝
+        </span>
+      )}
+    </div>
+  );
+};
+
+const PokemonTable = ({ pokemons, onScoreChange, onCommentChange}) => {
   return (
     <table className="pokemon-table">
       <thead>
@@ -46,14 +84,29 @@ const PokemonTable = ({ pokemons, onScoreChange }) => {
     className="pokemon-image"
   />
 </td>
-            <td>{pokemon.name}</td>
+            <td>{pokemon.name}
+            <IconComment
+                  comment={pokemon.commentPoke}
+                  onCommentChange={(newComment) =>
+                    onCommentChange(pokemon.id, "commentPoke", newComment)
+                  }
+                />
+            </td>
             {["photo1", "photo2", "photo3", "photo4"].map((photo) => (
               <td key={photo}>
                 <ColorPicker
                   currentColor={pokemon.scores[photo]}
                   onChange={(color) => onScoreChange(pokemon.id, photo, color)}
                 />
+                <IconLink url={pokemon.link} />
+                <IconComment
+                    comment={pokemon.comment}
+                    onCommentChange={(newComment) => 
+                      onCommentChange(pokemon.id, newComment)
+                    }
+                  />
               </td>
+              
             ))}
             <td>
               {pokemon.paths.map((path, index) => {

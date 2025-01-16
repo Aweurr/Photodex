@@ -19,3 +19,32 @@
   color: #fff;
   font-size: 12px;
 }
+.icon-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #007bff;
+}
+
+.icon-link:hover {
+  color: #0056b3;
+}
+.comment-input {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 4px;
+  margin-right: 5px;
+}
+.comment-save {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.comment-save:hover {
+  background-color: #388e3c;
+}

@@ -1,11 +1,18 @@
 export const pokemonList = [
-    {
-        id: 1,
-        name: "Prismillon",
-        image: "/Prismillon.png",
-        paths: ["Désert Sabrûlant (nuit)", "Terres Désolées (nuit)"],
-        scores: { photo1: "#FFB3C1", photo2: "#FFD6A5", photo3: "#FDFFB6", photo4: "#CAFFBF" },
-      },
+  {
+    id: 1,
+    name: "Prismillon",
+    image: "/Prismillon.png",
+    link: "https://example.com/prismillon",
+    commentPoke: "C'est mon Pokémon préféré",
+    comment1: "Belle photo au niveau 1",
+    comment2: "Photo moyenne au niveau 2",
+    comment3: "Pas mal au niveau 3",
+    comment4: "Incroyable au niveau 4",
+    paths: ["Désert Sabrûlant (nuit)", "Terres Désolées (nuit)"],
+    scores: { photo1: "#FFB3C1", photo2: "#FFD6A5", photo3: "#FDFFB6", photo4: "#CAFFBF" },
+  },
+  // Ajoute le reste des Pokémon ici en suivant ce format
       {
         id: 2,
         name: "Pichu",

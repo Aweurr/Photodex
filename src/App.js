@@ -63,11 +63,21 @@ const App = () => {
     filter ? pokemon.paths.some((path) => path.includes(filter)) : true
   );
 
+  const handleCommentChange = (pokemonId, commentType, newComment) => {
+    const updatedPokemons = pokemons.map((pokemon) =>
+      pokemon.id === pokemonId
+        ? { ...pokemon, [commentType]: newComment }
+        : pokemon
+    );
+    setPokemons(updatedPokemons);
+  };
+  
+
   return (
     <div className="app">
       <h1>Photodex - New Pokémon Snap</h1>
       <FilterBar filter={filter} onFilterChange={handleFilterChange} />
-      <PokemonTable pokemons={filteredPokemons} onScoreChange={handleScoreChange} />
+      <PokemonTable pokemons={filteredPokemons} onScoreChange={handleScoreChange} onCommentChange={handleCommentChange}/>
     </div>
   );
 };
