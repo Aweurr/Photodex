@@ -84,7 +84,9 @@ const PokemonTable = ({ pokemons, onScoreChange, onCommentChange}) => {
     className="pokemon-image"
   />
 </td>
-            <td>{pokemon.name}
+            <td>
+            <IconLink url={pokemon.linkpoke} />
+            {pokemon.name}
             <IconComment
                   comment={pokemon.commentPoke}
                   onCommentChange={(newComment) =>
@@ -92,13 +94,13 @@ const PokemonTable = ({ pokemons, onScoreChange, onCommentChange}) => {
                   }
                 />
             </td>
-            {["photo1", "photo2", "photo3", "photo4"].map((photo) => (
+            {["photo1", "photo2", "photo3", "photo4"].map((photo, index) => (
               <td key={photo}>
+                <IconLink url={pokemon[`link${index + 1}`]} />
                 <ColorPicker
                   currentColor={pokemon.scores[photo]}
                   onChange={(color) => onScoreChange(pokemon.id, photo, color)}
                 />
-                <IconLink url={pokemon.link} />
                 <IconComment
                     comment={pokemon.comment}
                     onCommentChange={(newComment) => 
