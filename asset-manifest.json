@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/myphotodex/static/css/main.c10b2eb1.css",
-    "main.js": "/myphotodex/static/js/main.b9f6c076.js",
-    "static/js/488.9a2a4761.chunk.js": "/myphotodex/static/js/488.9a2a4761.chunk.js",
-    "index.html": "/myphotodex/index.html",
-    "main.c10b2eb1.css.map": "/myphotodex/static/css/main.c10b2eb1.css.map",
-    "main.b9f6c076.js.map": "/myphotodex/static/js/main.b9f6c076.js.map",
-    "488.9a2a4761.chunk.js.map": "/myphotodex/static/js/488.9a2a4761.chunk.js.map"
+    "main.css": "/Photodex/static/css/main.c10b2eb1.css",
+    "main.js": "/Photodex/static/js/main.f9ea82f7.js",
+    "static/js/488.9a2a4761.chunk.js": "/Photodex/static/js/488.9a2a4761.chunk.js",
+    "index.html": "/Photodex/index.html",
+    "main.c10b2eb1.css.map": "/Photodex/static/css/main.c10b2eb1.css.map",
+    "main.f9ea82f7.js.map": "/Photodex/static/js/main.f9ea82f7.js.map",
+    "488.9a2a4761.chunk.js.map": "/Photodex/static/js/488.9a2a4761.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c10b2eb1.css",
-    "static/js/main.b9f6c076.js"
+    "static/js/main.f9ea82f7.js"
   ]
 }
