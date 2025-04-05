@@ -1,3 +1,4 @@
+/* Pokémon Table global */
 .pokemon-table {
   margin: 20px auto;
   border-collapse: collapse;
@@ -9,32 +10,39 @@
 .pokemon-table td {
   border: 1px solid #ddd;
   padding: 8px;
+  vertical-align: middle;
 }
 
-.path {
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 2px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 12px;
+/* Wrapper pour centrer les éléments dans les cases */
+.cell-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
+
+/* Corrige le trait sous les icônes lien */
 .icon-link {
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin-right: 5px;
+  font-size: 1.4rem;
   color: #007bff;
+  cursor: pointer;
+  text-decoration: none; /* empêche le trait */
 }
 
 .icon-link:hover {
   color: #0056b3;
+  text-decoration: none; /* empêche le trait au hover */
 }
+
+
+/* Comment input + bouton */
 .comment-input {
-  width: 100%;
-  font-size: 0.9rem;
+  width: 100px;
+  font-size: 0.8rem;
   padding: 4px;
-  margin-right: 5px;
 }
+
 .comment-save {
   background-color: #4caf50;
   color: white;
@@ -47,4 +55,18 @@
 
 .comment-save:hover {
   background-color: #388e3c;
+}
+
+/* Path Tags */
+.path {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.icon-link {
+  text-decoration: none;
 }
