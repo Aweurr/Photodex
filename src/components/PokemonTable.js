@@ -28,6 +28,7 @@ const IconLink = ({ url }) => (
   </a>
 );
 
+
 const IconComment = ({ comment, onCommentChange }) => {
   const [editing, setEditing] = useState(false);
   const [tempComment, setTempComment] = useState(comment);
@@ -77,13 +78,9 @@ const PokemonTable = ({ pokemons, onScoreChange, onCommentChange}) => {
       <tbody>
         {pokemons.map((pokemon) => (
           <tr key={pokemon.id}>
-<td>
-  <img
-    src={pokemon.image}
-    alt={pokemon.name}
-    className="pokemon-image"
-  />
-</td>
+          <td>
+          <img src={`${process.env.PUBLIC_URL}${pokemon.image}`} alt={pokemon.name} />
+          </td>
             <td>
             <IconLink url={pokemon.linkpoke} />
             {pokemon.name}
